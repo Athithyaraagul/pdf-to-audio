@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Raves Audiobook Service</title>
+
+    <!-- CSS FILES -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap-icons.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/templatemo-topic-listing.css') }}">
+
+    <!-- Bootstrap Icons CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.15.0/font/bootstrap-icons.css" rel="stylesheet">
+    
+</head>
+<body id="top">
+    <main>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <div class="col-lg-3 col-12 mb-4 pb-2">
+                        <a class="navbar-brand mb-2" href="mainpage.html">
+                            <span>Raves</span>
+                        </a>
+                    </div>
+                    <div class="d-lg-none ms-auto me-4">
+                        <a href="#top" class="navbar-icon bi-person smoothscroll"></a>
+                    </div>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-lg-5 me-lg-auto">
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_1">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_2">About Us</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_3">How It Works</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_4">FAQs</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_5">Contact Us</a>
+                            </li>
+                    </div>
+                </div>
+            </nav>
+
+            <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-12 mx-auto">
+                            <h1 class="text-white text-center">Meet Raves</h1>
+
+                            <h6 class="text-center">Your Fast Lane to Multilingual Audio Listening.</h6>
+
+                            <br><br>
+
+                            <form method="get" class="custom-form mt-4 pt-2 mb-lg-0 mb-5" role="search">
+
+                            <center>
+                                <a href="/conversion" class="btn btn-primary">Try Us Now</a>
+                            </center>
+
+                            </form>
+                            
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="explore-section section-padding" id="section_2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h2 class="mb-4">About Us</h2>
+                        </div>
+
+                    </div>
+                </div>
+                <center>
+                <p style="font-family: verdana;">
+                    Raves is the ultimate solution for converting your PDFs to an audiobook. We have designed a platform that is compatible with all devices, making it easy and convenient to use. 
+                    <br>
+                    Our cutting-edge technology makes the conversion process simple, fast, and efficient. Our team of experts works tirelessly to make sure that our platform is as effective as possible.   
+                    <br>
+                    With Raves, you can easily turn your favorite PDFs into your audiobook without fuss or delay. Get started today and experience the value of Raves.
+                    <br><br><br><br>
+                </p>
+                </center>
+
+            <section class="timeline-section section-padding" id="section_3">
+                <div class="section-overlay"></div>
+
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-12 text-center">
+                            <h2 class="text-white mb-4">How does it work?</h2>
+                        </div>
+
+                        <div class="col-lg-10 col-12 mx-auto">
+                            <div class="timeline-container">
+                                <ul class="vertical-scrollable-timeline" id="vertical-scrollable-timeline">
+                                    <div class="list-progress">
+                                        <div class="inner"></div>
+                                    </div>
+
+                                    <li>
+                                        <h4 class="text-white mb-3">Choose the PDF</h4>
+
+                                        <p class="text-white">Simply enter the PDF you want to convert in the search box</p>
+
+                                        <div class="icon-holder">
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <h4 class="text-white mb-3">Let the converter do its job</h4>
+
+                                        <p class="text-white">Our coding will read, translate and create an audiobook your desired language within a few seconds</p>
+
+                                        <div class="icon-holder">
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <h4 class="text-white mb-3">Sit back, Relax &amp; Enjoy!</h4>
+
+                                        <p class="text-white">Once the audiobook is generated, you can now sit back, relax and enjoy!</p>
+
+                                        <div class="icon-holder">
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="faq-section section-padding" id="section_4">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-12">
+                            <h2 class="mb-4">Frequently Asked Questions</h2>
+                        </div>
+
+                        <div class="clearfix"></div>
+
+                        <div class="col-lg-5 col-12">
+                            <img src="{{ url_for('static', filename='images/faq_graphic.jpg') }}" alt="FAQs" height="400px" width="550px"> 
+                        </div>
+
+                        <div class="col-lg-6 col-12 m-auto">
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne"> 
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        What is Raves?
+                                        </button>
+                                    </h2>
+
+                                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Raves is the ultimate solution for convert your PDFs to audiobooks.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        How to find a PDF?
+                                    </button>
+                                    </h2>
+
+                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                        You can search on Google for any book PDFs you are interested or you can surf through some of many book subreddits to get a suggesstion or curiosity!
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Is it free or paid?
+                                    </button>
+                                    </h2>
+
+                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Nope! It is 100% free for everyone!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact-section section-padding section-bg" id="section_5">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-12 col-12 text-center">
+                            <h2 class="mb-5">Get in touch</h2>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-12 mb-3 mb-lg- mb-md-0 ms-auto">
+                            <h4 class="mb-3">KTR Office</h4>
+
+                            <p>SRM Institute of Science and Technology, R2FV+6Q7, Potheri, SRM Nagar, Kattankulathur, Tamil Nadu 603203</p>
+
+                            <hr>
+
+                            <p class="d-flex align-items-center mb-1">
+                                <span class="me-2">Phone</span>
+
+                                <a href="tel: 044 2741 7000" class="site-footer-link">
+                                    044 2741 7000
+                                </a>
+                            </p>
+
+                            <p class="d-flex align-items-center">
+                                <span class="me-2">Website</span>
+
+                                <a href="https://www.srmist.edu.in/" class="site-footer-link">
+                                    https://www.srmist.edu.in/
+                                </a>
+                            </p>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-12 mx-auto">
+                            <h4 class="mb-3">RMP Office</h4>
+
+                            <p>SRM Institute Of Science And Technology, Bharathi Salai, Ramapuram, Chennai, Tamil Nadu 600089</p>
+
+                            <hr>
+
+                            <p class="d-flex align-items-center mb-1">
+                                <span class="me-2">Phone</span>
+
+                                <a href="tel: 1800 102 1525" class="site-footer-link">
+                                    1800 102 1525
+                                </a>
+                            </p>
+
+                            <p class="d-flex align-items-center">
+                                <span class="me-2">Website</span>
+
+                                <a href="https://ist.srmrmp.edu.in/" class="site-footer-link">
+                                    https://ist.srmrmp.edu.in/
+                                </a>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-3 col-12 mb-4 pb-2">
+                    <a class="navbar-brand mb-2" href="mainpage.html">
+                        <span>Raves</span>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-6">
+                    <h6 class="site-footer-title mb-3">Resources</h6>
+
+                    <ul class="site-footer-links">
+                        <li class="site-footer-link-item">
+                            <a href="#" class="site-footer-link">Home</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="#" class="site-footer-link">How it works</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="#" class="site-footer-link">FAQs</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="#" class="site-footer-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-6 mb-4 mb-lg-0">
+                    <h6 class="site-footer-title mb-3">Information</h6>
+
+                    <p class="text-white d-flex mb-1">
+                        <a href="tel: 6380745779" class="site-footer-link">
+                            6380745779
+                        </a>
+                    </p>
+
+                    <p class="text-white d-flex">
+                        <a href="mailto:info@Raves.com" class="site-footer-link">
+                            info@Raves.com
+                        </a>
+                    </p>
+                </div>
+
+                    <p class="copyright-text mt-lg-5 mt-4">Copyright © 2023 Raves. All rights reserved.
+                    </p>
+                    
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    </main>
+    <!-- JavaScript Files -->
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.sticky.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/click-scroll.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+</body>
+</html>
