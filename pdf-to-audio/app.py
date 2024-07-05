@@ -21,7 +21,7 @@ def extract_text_from_pdf(pdf_filename):
 
 # Function to translate text using Microsoft Translator API
 def translate_text(input_text, target_language):
-    subscription_key = '2b86cbf9-f792-4fda-96c1-e941d2c71739'
+    subscription_key = 'subscription_key'
     endpoint = "https://api.cognitive.microsofttranslator.com"
     location = 'centralindia'
 
